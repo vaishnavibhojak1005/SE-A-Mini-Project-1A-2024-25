@@ -1,0 +1,59 @@
+-- MySQL dump 10.13  Distrib 8.0.38, for Win64 (x86_64)
+--
+-- Host: localhost    Database: dasauto
+-- ------------------------------------------------------
+-- Server version	8.0.39
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `car_sedan`
+--
+
+DROP TABLE IF EXISTS `car_sedan`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `car_sedan` (
+  `CAR_ID` varchar(7) NOT NULL,
+  `CAR_NO` varchar(100) NOT NULL,
+  `CAR_NAME` varchar(15) NOT NULL,
+  `MILAGE` decimal(5,2) NOT NULL,
+  `ENGINE_CAP` varchar(10) NOT NULL,
+  `PRICE` decimal(12,2) NOT NULL,
+  `YEAR_MNFCTRE` varchar(256) NOT NULL,
+  `STAT_US` varchar(50) NOT NULL,
+  `CAR_RENTAL_RATE` decimal(7,2) NOT NULL,
+  `QUANTITY` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`CAR_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `car_sedan`
+--
+
+LOCK TABLES `car_sedan` WRITE;
+/*!40000 ALTER TABLE `car_sedan` DISABLE KEYS */;
+INSERT INTO `car_sedan` VALUES ('01','MH04BN0001','BMW M5',20.00,'4395',15000.00,'2019','available',1200.00,'1'),('099','9900','gfgdf',55.00,'244',2028.00,'34','1',242.00,NULL),('14','1234','aaaa',12.00,'122',1222.00,'12212','12',12121.00,NULL),('41','678','ghh',99.00,'344',20119.00,'233','3',122.00,NULL),('43','678','ghh',99.00,'344',20119.00,'233','3',122.00,NULL),('56','233','audi',999.00,'1299',2020.00,'1299','1',122.00,NULL),('66','mh04','verna',10.00,'900',2022.00,'1000','1',3000.00,NULL),('67','344','hhf',455.00,'888',2019.00,'7587','5',2000.00,NULL),('69','MH0414','honda city',20.00,'145',2019.00,'1788','1',3000.00,NULL),('76','677','ool',67.00,'5656',2921.00,'5555','3',2333.00,NULL),('88','344','hhf',455.00,'888',2019.00,'7587','5',2000.00,NULL),('96','233','ee',333.00,'2332',2019.00,'133','2',122.00,NULL);
+/*!40000 ALTER TABLE `car_sedan` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2024-11-09 12:46:44
